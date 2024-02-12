@@ -1,7 +1,15 @@
 .furniture-offer-section,.furniture-offer-card-body{
     background-color: #f6f6f6;
+    font-size: 14px;
+
+}
+span.percent-off,span.mrp{
+    margin-left: 5px;
 }
 
+.furniture-offer-card-title{
+    font-weight: 500;
+}
 .furniture-brands-offer{
     width: 25%;
 }

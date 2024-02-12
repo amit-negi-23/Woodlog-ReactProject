@@ -42,7 +42,7 @@ export default function Furniture() {
                             <h4 class="furniture-offer-card-title">{item.title}</h4>
                             <div>
                                 <span><strong>₹{item.price.sell}</strong></span>
-                                <span><s>₹{item.price.mrp}</s></span>
+                                <span className='mrp'><s>₹{item.price.mrp}</s></span>
                                 <span class="percent-off">{item.discount.percent}</span>
                             </div>
                         </div>
