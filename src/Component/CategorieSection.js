@@ -46,8 +46,9 @@ export default function CategorieSection() {
                 <h2>Shop Best Sellers</h2>
                 <div className="furniture-best-seller-container">
                     {(bestSell != null) ? bestSell.map((item) => {
+                        console.log('bestseller',item)
                         return (
-                            <a href="sofas.html">
+                            <Link to={'/'+item.pathname}>
                                 <div className="furniture-best-seller-cards">
                                     <img src={item.image}
                                         className="furniture-img" alt='fur' />
@@ -55,17 +56,17 @@ export default function CategorieSection() {
                                         <h3 className="furniture-best-seller-card-title">{item.product}</h3>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         )
                     }) : <><h2>loading.....</h2></>}
 
                 </div>
             </section>
 
-            <section>
-                <div style={{ textAlign: 'center' }}>
-                    <img src='https://ii1.pepperfry.com/assets/3c7308b7-afe8-4992-b29a-24c43ae9c780.jpg' width={340} alt='discount' />
-                    <img src='https://ii1.pepperfry.com/assets/8432fff0-e21d-4556-9134-6f899807ec92.jpg' width={1150} alt='discount' />
+            <section className='sale-discount-section'>
+                <div className='sale-discount-container'>
+                    <div><img src='https://ii1.pepperfry.com/assets/3c7308b7-afe8-4992-b29a-24c43ae9c780.jpg'  alt='discount' /></div>
+                    <div><img src='https://ii1.pepperfry.com/assets/8432fff0-e21d-4556-9134-6f899807ec92.jpg'  alt='discount' /></div>
                 </div>
             </section>
         </div>
