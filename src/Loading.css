@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ball {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    filter: opacity(0.9);
+    animation-duration: 1.9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bg-red {
+    background-color: red;
+    animation-name: red-dg;
+}
+
+.bg-skyblue {
+    background-color: skyblue;
+    animation-name: sky-dg;
+}
+
+.bg-green {
+    background-color: #15c915;
+    animation-name: green-dg;
+}
+
+.bg-violet {
+    background-color: violet;
+    animation-name: violet-dg;
+
+}
+
+@keyframes red-dg {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(70px, 70px);
+    }
+
+    50% {
+        transform: translate(0px, 0px);
+    }
+
+    75% {
+        transform: translate(0px, 70px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes sky-dg {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(-70px, 70px);
+    }
+
+    50% {
+        transform: translate(0px, 0px);
+    }
+
+    75% {
+        transform: translate(0px, 70px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes green-dg {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(70px, -70px);
+    }
+
+    50% {
+        transform: translate(0px, 0px);
+    }
+
+    75% {
+        transform: translate(0px, -70px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes violet-dg {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(-70px, -70px);
+    }
+
+    50% {
+        transform: translate(0px, 0px);
+    }
+
+    75% {
+        transform: translate(0px, -70px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

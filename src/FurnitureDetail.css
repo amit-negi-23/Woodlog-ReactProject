@@ -1,0 +1,81 @@
+.furniture-details-section{
+    margin-top: 10px;
+}
+.detail-furniture-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 150px;
+}
+
+.detail-brand-name {
+    color: #ff7035;
+    font-size: 18px;
+    margin-bottom: 12px;
+
+}
+
+.today-deal-detail{
+    color: #67ad5b;
+    font-size: 18px;
+}
+
+.addtocart-btn, .buynow-btn{
+    width: 20em;
+    height: 3rem;
+    font-size: 1rem;
+    border: 1px solid #ff7035;
+    color: #ff7035;
+    background-color: #fff;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.addtocart-btn:active{
+    background-color: #ff7035;
+    color: #fff;
+
+}
+.buynow-btn{
+    background-color: #ff7035;
+    color: #fff;
+    margin-left: 40px;
+
+}
+.buynow-btn:active{
+    background-color: #fff;
+    color: #ff7035;
+}
+
+
+.detail-furniture-price{
+    margin-top: 20px;
+}
+.offer-price,.mrp-price,.detail-todays-deal,.detail-price-savings{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 140px auto;
+
+}
+.offer-price, .mrp-price{
+    height: 25px;
+}
+.detail-todays-deal{
+    height: 50px;
+    margin-bottom: 10px;
+}
+.detail-price-savings{
+    height: 50px;
+    margin: 15px 0;
+}
+.detail-furniture-card-title{
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.detail-product-rating{
+    margin-bottom: 30px;
+}
+.detail-shipping-status{
+    margin: 15px 0;
+}

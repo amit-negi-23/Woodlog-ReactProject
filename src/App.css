@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  /* background-color: #dad5d9; */
+}
+
+#header-top-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #f2eeee;  */
+  padding: 5px 0px;
+}
+
+#logo-container {
+  height: 90px;
+}
+
+#logo-container img {
+  height: 100%;
+}
+#icons i{
+  margin-right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+#icons a{
+  color: #000;
+}
+#signup-btn,
+#login-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  /* background-color: #00b140; */
+  border: none;
+}
+#signup-btn{
+  
+  margin-right:15px;
+}
+#search {
+  border: 1px solid rgb(217, 214, 214);
+  border-radius: 1.25rem;
+  padding: 0 20px;
+  display: flex;
+  background-color: #fff;
+}
+
+#search button {
+  border: none;
+  background-color: #fff;
+  padding: 0;
+  display: inline-block;
+}
+
+#search input {
+  outline: none;
+  border: 0;
+  width: 30rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.material-symbols-outlined {
+  border-radius: 1.25rem;
+}
+
+#header-bottom-container {
+  text-align: center;
+  background-color: #f2eeee;
+  padding: 15px;
+}
+
+#navbar {
+  justify-self: flex-start;
+}
+
+#navmenu {
+  margin: 0;
+}
+
+#navmenu .navitem {
+  list-style: none;
+  display: inline-block;
+}
+
+#navmenu .navitem .navlink {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: large;
+  color: #000;
+}
+
+#hero-sec{
+
+  margin: 0 50px;
+}
+
+#hero-sec img {
+  width: 100%;
+}
+
+.furniture-shop-container , .furniture-best-seller-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin: 10px auto;
+}
+.furniture-shop-container a , .furniture-best-seller-container a{
+  text-decoration: none;
+
+}
+
+
+#furniture-shop-section,.furniture-best-seller-section{
+  margin: 20px 50px;
+  text-align: center;
+}
+
+.furniture-shop-cards,.furniture-best-seller-cards {
+  width: 200px;
+  background-color: #fffefe;
+  margin-bottom: 10px;
+}
+
+.furniture-img {
+  width: 100%;
+}
+.furniture-shop-card-title,.furniture-best-seller-card-title{
+  color: #5B5B5B;
+}
+.furniture-care-section h2, #furniture-shop-section h2,.furniture-best-seller-section h2{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #9d6a37;
+}
+.furniture-care-container{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px
+}
+.furniture-care{
+  width: 48rem;
+}
+.furniture-care img{
+  width: 100%;
+}
