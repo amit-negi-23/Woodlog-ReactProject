@@ -60,7 +60,7 @@ body {
 #search input {
   outline: none;
   border: 0;
-  width: 30rem;
+  width: 30em;
   height: 2.5rem;
   border-radius: 1.25rem;
   display: inline-block;
@@ -152,4 +152,15 @@ body {
 }
 .furniture-care img{
   width: 100%;
+}
+
+.sale-discount-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sale-discount-container img{
+  width: 100%;
+
 }
