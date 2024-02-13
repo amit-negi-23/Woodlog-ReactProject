@@ -79,3 +79,50 @@
 .detail-shipping-status{
     margin: 15px 0;
 }
+.detail-furniture-img img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .detail-furniture-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin: 0px;
+    }
+    .addtocart-btn, .buynow-btn{
+        width: 10em;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .buynow-btn{
+        margin-left: 15px;
+    
+    }
+    .detail-furniture-card-body{
+        padding: 10px;
+    }
+    .detail-furniture-card-title{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .detail-brand-name {
+        font-size: 16px;
+        margin-bottom: 5px;
+    
+    }
+    .detail-product-rating{
+    margin-bottom: 10px;
+
+    }
+    .detail-furniture-price{
+        margin-top: 15px;
+    }
+   .detail-price-savings{
+    height: 90px;
+   }
+    .offer-price,.mrp-price,.detail-todays-deal,.detail-price-savings{
+        grid-template-columns: 108px auto;
+    
+    }
+}
