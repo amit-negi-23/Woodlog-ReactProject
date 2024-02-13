@@ -46,7 +46,7 @@ export default function CategorieSection() {
                 <h2>Shop Best Sellers</h2>
                 <div className="furniture-best-seller-container">
                     {(bestSell != null) ? bestSell.map((item) => {
-                        console.log('bestseller',item)
+                        
                         return (
                             <Link to={'/'+item.pathname}>
                                 <div className="furniture-best-seller-cards">

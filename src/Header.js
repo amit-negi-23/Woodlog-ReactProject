@@ -1,24 +1,31 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import brandlogo from './Assets/woodlog.png'
-import {Link} from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
+import { CartContext } from './App'
+import './blink.css'
 export default function Header() {
+    const { store: { products } } = useContext(CartContext)
+
     return (
         <div>
             <header>
                 <div id="header-top-container">
                     <div id="logo-container">
-                        <img src={brandlogo} alt="brandlogo"/>
+                        <img src={brandlogo} alt="brandlogo" />
                     </div>
 
                     <div id="search">
-                        <input type="text" placeholder="search here"/>
-                            <button>
-                                <span className="material-symbols-outlined">search</span>
-                            </button>
+                        <input type="text" placeholder="search here" />
+                        <button>
+                            <span className="material-symbols-outlined">search</span>
+                        </button>
                     </div>
                     <div id="icons">
-                        <Link to={'/cart'}><i className="fa-solid fa-cart-shopping"></i></Link>
+
+                        <Link to={'/cart'}><span className='shopping-cart'><i className="fa-solid fa-cart-shopping"></i>
+                            {(products.length !== 0) ? <div className='cart-status'>
+                                <div className="blinkdot"></div>
+                            </div> : ""}</span></Link>
                         <i className="fa-regular fa-heart"></i>
                         <i className="fa-regular fa-user"></i>
                     </div>

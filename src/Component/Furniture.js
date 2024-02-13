@@ -33,7 +33,7 @@ export default function Furniture() {
                         <img src={brands.allBrand} alt='offer'/>
                 </div>:'loading'}
                 {(categoryOffer!=null)?categoryOffer.map((item)=>{
-                  console.log(item)
+                  
                   return(
                     <Link to={'/'+category+ '/'+item.productId}>
                     <div class="furniture-offer-cards">

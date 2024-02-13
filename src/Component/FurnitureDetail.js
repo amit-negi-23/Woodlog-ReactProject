@@ -17,7 +17,7 @@ export default function FurnitureDetail() {
     }, [product])
 
     const addProduct= ()=>{
-        // console.log(productData)
+    
         dispatch({type:String.ADD_PRODUCT, payload: {newProduct: productData}})
     }
 

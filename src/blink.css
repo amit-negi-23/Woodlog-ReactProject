@@ -1,0 +1,33 @@
+.shopping-cart{
+    position: relative;
+}
+
+.cart-status{
+        color: #00ff00;
+        position: absolute;
+        bottom: 20px;
+        right: 13px;
+}
+
+.blinkdot{
+    width: 5px;
+    height: 5px;
+    background-color: #ff7035;
+    border-radius: 50%;
+    animation-name: blinking;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+}
+@keyframes blinking {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(3);
+        opacity: 0;
+    }
+}

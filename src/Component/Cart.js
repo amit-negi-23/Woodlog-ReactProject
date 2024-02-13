@@ -9,7 +9,7 @@ export default function Cart() {
 
    
     const removeProduct= (product)=>{
-        console.log(product)
+        
         dispatch({type: String.REMOVE_PRODUCT, payload: {id:product.productId}})
     }
   return (
