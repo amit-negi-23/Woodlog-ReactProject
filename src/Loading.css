@@ -139,3 +139,104 @@ body {
         transform: translate(0px, 0px);
     }
 }
+
+
+@media only screen and (max-width: 600px){
+    .loader-container {
+        width: 80px;
+        height: 80px;
+    }
+    .ball {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    @keyframes red-dg {
+        0% {
+            transform: translate(0px, 0px);
+        }
+    
+        25% {
+            transform: translate(40px, 40px);
+        }
+    
+        50% {
+            transform: translate(0px, 0px);
+        }
+    
+        75% {
+            transform: translate(0px, 40px);
+        }
+    
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+    
+    @keyframes sky-dg {
+        0% {
+            transform: translate(0px, 0px);
+        }
+    
+        25% {
+            transform: translate(-40px, 40px);
+        }
+    
+        50% {
+            transform: translate(0px, 0px);
+        }
+    
+        75% {
+            transform: translate(0px, 40px);
+        }
+    
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+    
+    @keyframes green-dg {
+        0% {
+            transform: translate(0px, 0px);
+        }
+    
+        25% {
+            transform: translate(40px, -40px);
+        }
+    
+        50% {
+            transform: translate(0px, 0px);
+        }
+    
+        75% {
+            transform: translate(0px, -40px);
+        }
+    
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+    
+    @keyframes violet-dg {
+        0% {
+            transform: translate(0px, 0px);
+        }
+    
+        25% {
+            transform: translate(-40px, -40px);
+        }
+    
+        50% {
+            transform: translate(0px, 0px);
+        }
+    
+        75% {
+            transform: translate(0px, -40px);
+        }
+    
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+}
