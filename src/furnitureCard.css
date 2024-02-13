@@ -100,3 +100,20 @@ span.percent-off, .todays-deal{
 .current-price span s{
     opacity: 0.7;
 }
+
+@media only screen and (max-width: 600px) {
+    
+  .furniture-offer-card-container{
+    overflow: auto;
+    flex-wrap: nowrap;
+  }
+  .furniture-offer-card-title{
+    font-size: 10px;
+  }
+  .furniture-offer-card-price{
+    font-size: 12px;
+  }
+  .furniture-offer-cards{
+    width: 150px;
+  }
+}

@@ -164,3 +164,60 @@ body {
   width: 100%;
 
 }
+
+@media only screen and (max-width: 600px){
+  #search input {
+    display: none;
+  }
+  #logo-container {
+    height: initial;
+    width: 50px;
+  }
+  #logo-container img {
+    height: initial;
+    width: 100%;
+  }
+  #hero-sec{
+    margin: 0;
+  }
+  #header-bottom-container{
+    padding: 0;
+  }
+  #furniture-shop-section{
+    margin: 0;
+  }
+  .furniture-shop-container{
+      gap: 5px;
+  }
+  .furniture-shop-cards{
+    width: 150px;
+  }
+
+  #icons i{
+    margin: 0 5px;
+    font-size: 20px;
+  }
+  #signup-btn,
+  #login-btn{
+    padding: 5px;
+  }
+
+  .furniture-best-seller-section{
+    margin: 0;
+  }
+  .furniture-best-seller-container{
+    gap: 5px;
+  }
+  .furniture-best-seller-cards{
+    width: 150px;
+  }
+
+
+  .furniture-offer-card-container{
+    overflow: auto;
+  }
+
+  .furniture-offer-cards{
+    width: 100px;
+  }
+}

@@ -36,14 +36,14 @@ export default function Furniture() {
                   
                   return(
                     <Link to={'/'+category+ '/'+item.productId}>
-                    <div class="furniture-offer-cards">
-                        <img src={item.image} class="furniture-img" alt='off'/>
-                        <div class="furniture-offer-card-body">
-                            <h4 class="furniture-offer-card-title">{item.title}</h4>
-                            <div>
+                    <div className="furniture-offer-cards">
+                        <img src={item.image} className="furniture-img" alt='off'/>
+                        <div className="furniture-offer-card-body">
+                            <h4 className="furniture-offer-card-title">{item.title}</h4>
+                            <div className="furniture-offer-card-price">
                                 <span><strong>₹{item.price.sell}</strong></span>
                                 <span className='mrp'><s>₹{item.price.mrp}</s></span>
-                                <span class="percent-off">{item.discount.percent}</span>
+                                <span className="percent-off">{item.discount.percent}</span>
                             </div>
                         </div>
                     </div>
