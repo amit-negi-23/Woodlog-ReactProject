@@ -214,6 +214,18 @@ body {
   .furniture-best-seller-cards{
     width: 150px;
   }
-
+  #header-bottom-container{
+    padding: 10px;
+  }
+  #navmenu{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 10px 20px;
+  }
+  #navmenu .navitem .navlink{
+    font-size: 12px;
+    padding: 5px;
+  }
 
 }
