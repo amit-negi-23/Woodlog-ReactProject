@@ -10,9 +10,11 @@ export default function Header() {
         <div>
             <header>
                 <div id="header-top-container">
-                    <div id="logo-container">
-                        <img src={brandlogo} alt="brandlogo" />
-                    </div>
+                    <Link to={'/'}>
+                        <div id="logo-container">
+                            <img src={brandlogo} alt="brandlogo" />
+                        </div>
+                    </Link>
 
                     <div id="search">
                         <input type="text" placeholder="search here" />
