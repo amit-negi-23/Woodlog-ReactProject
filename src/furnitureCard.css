@@ -155,7 +155,7 @@ span.percent-off,
         max-width: 175px;
         padding-bottom: 0px;
         margin-bottom: 15px;
-        box-shadow: 0px 0px 1px #b6b4b4,-1px -2px 3px #b6b4b4;
+        box-shadow: 0px 0px 1px #b6b4b4,-1px -1px 1px #b6b4b4;
     }
 
     .furniture-card-body {
@@ -168,11 +168,11 @@ span.percent-off,
     .extra-saving,
     .product-rating,
     .shipping-status {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .furniture-card-title {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 2px;
     }
 }
