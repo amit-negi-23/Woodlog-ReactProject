@@ -1,22 +1,28 @@
-.furniture-offer-section,.furniture-offer-card-body{
+.furniture-offer-section,
+.furniture-offer-card-body {
     background-color: #f6f6f6;
     font-size: 14px;
 
 }
-span.percent-off,span.mrp{
+
+span.percent-off,
+span.mrp {
     margin-left: 5px;
 }
 
-.furniture-offer-card-title{
+.furniture-offer-card-title {
     font-weight: 500;
 }
-.furniture-brands-offer{
+
+.furniture-brands-offer {
     width: 25%;
 }
-.furniture-brands-offer img{
+
+.furniture-brands-offer img {
     width: 100%;
 }
-.furniture-offer-card-container{
+
+.furniture-offer-card-container {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -24,13 +30,13 @@ span.percent-off,span.mrp{
     justify-content: space-evenly;
 }
 
-.furniture-offer-card-container a{
+.furniture-offer-card-container a {
     text-decoration: none;
     color: #000;
 }
 
 
-#furniture-offer-card-section{
+#furniture-offer-card-section {
     margin: 20px 50px;
     text-align: center;
 }
@@ -51,13 +57,14 @@ span.percent-off,span.mrp{
     justify-content: center;
     margin: 10px auto;
 }
-.furniture-cards-container a{
+
+.furniture-cards-container a {
     text-decoration: none;
     color: #000;
 }
 
 
-#furniture-card-section{
+#furniture-card-section {
     margin: 20px 50px;
 }
 
@@ -73,47 +80,99 @@ span.percent-off,span.mrp{
     width: 100%;
 }
 
-.furniture-card:hover{
+.furniture-card:hover {
     box-shadow: 0 0 15px #bcbcbc;
 }
 
-span.percent-off, .todays-deal{
+span.percent-off,
+.todays-deal {
     color: green;
 }
-.furniture-offer-card-body span s{
+
+.furniture-offer-card-body span s {
     opacity: 0.7;
 }
-.furniture-card-body{
+
+.furniture-card-body {
     padding: 10px;
 }
 
-.brand-name,.todays-deal, .price-savings, .extra-saving, .product-rating,.shipping-status{
+.brand-name,
+.todays-deal,
+.price-savings,
+.extra-saving,
+.product-rating,
+.shipping-status {
     font-size: 13px;
     margin-bottom: 5px;
 }
-.current-price, .furniture-card-title{
+
+.current-price,
+.furniture-card-title {
     margin-bottom: 5px;
 }
-.extra-saving{
+
+.extra-saving {
     color: #00f;
 }
-.current-price span s{
+
+.current-price span s {
     opacity: 0.7;
 }
 
 @media only screen and (max-width: 600px) {
-    
-  .furniture-offer-card-container{
-    overflow: auto;
-    flex-wrap: nowrap;
-  }
-  .furniture-offer-card-title{
-    font-size: 10px;
-  }
-  .furniture-offer-card-price{
-    font-size: 12px;
-  }
-  .furniture-offer-cards{
-    width: 150px;
-  }
+    .furniture-offer-card-container {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .furniture-offer-card-title {
+        font-size: 10px;
+    }
+
+    .furniture-offer-card-price {
+        font-size: 12px;
+    }
+
+    .furniture-offer-cards {
+        width: 150px;
+    }
+
+    .furniture-brands-offer {
+        margin-left: 240px;
+    }
+
+    #furniture-card-section {
+        margin: 0;
+    }
+
+    .furniture-cards-container {
+        box-sizing: border-box;
+        gap: 2px 7px;
+    }
+
+    .furniture-card {
+        max-width: 200px;
+        padding-bottom: 0px;
+        margin-bottom: 15px;
+        box-shadow: 0px 0px 1px #b6b4b4,-1px -2px 3px #b6b4b4;
+    }
+
+    .furniture-card-body {
+        padding: 7px;
+    }
+
+    .brand-name,
+    .todays-deal,
+    .price-savings,
+    .extra-saving,
+    .product-rating,
+    .shipping-status {
+        font-size: 12px;
+    }
+
+    .furniture-card-title {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
 }

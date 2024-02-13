@@ -213,11 +213,4 @@ body {
   }
 
 
-  .furniture-offer-card-container{
-    overflow: auto;
-  }
-
-  .furniture-offer-cards{
-    width: 100px;
-  }
 }
