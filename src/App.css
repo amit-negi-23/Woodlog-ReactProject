@@ -166,7 +166,8 @@ body {
 }
 
 @media only screen and (max-width: 600px){
-  #search input {
+  #search{
+    padding:0 8px;
     display: none;
   }
   #logo-container {
@@ -199,9 +200,11 @@ body {
   }
   #signup-btn,
   #login-btn{
-    padding: 5px;
+    padding: 6px 10px;
   }
-
+#signup-btn{
+  margin-right: 10px;
+}
   .furniture-best-seller-section{
     margin: 0;
   }
