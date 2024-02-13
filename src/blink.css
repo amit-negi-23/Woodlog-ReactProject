@@ -1,15 +1,15 @@
-.shopping-cart{
+.shopping-cart {
     position: relative;
 }
 
-.cart-status{
-        color: #00ff00;
-        position: absolute;
-        bottom: 20px;
-        right: 13px;
+.cart-status {
+    color: #00ff00;
+    position: absolute;
+    bottom: 20px;
+    right: 13px;
 }
 
-.blinkdot{
+.blinkdot {
     width: 5px;
     height: 5px;
     background-color: #ff7035;
@@ -19,15 +19,25 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    
+
 }
+
 @keyframes blinking {
-    from{
+    from {
         transform: scale(1);
         opacity: 1;
     }
-    to{
+
+    to {
         transform: scale(3);
         opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cart-status {
+        color: #00ff00;
+        bottom: 18px;
+        right: 1px;
     }
 }
