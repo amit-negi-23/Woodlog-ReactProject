@@ -23,7 +23,7 @@ export default function Header() {
                         </button>
                     </div>
                     <div id="icons">
-                    <Link to={'/'}><i class="fa-solid fa-house"></i></Link>
+                    <Link to={'/'}><i className="fa-solid fa-house"></i></Link>
                         <Link to={'/cart'}><span className='shopping-cart'><i className="fa-solid fa-cart-shopping"></i>
                             {(products.length !== 0) ? <div className='cart-status'>
                                 <div className="blinkdot"></div>

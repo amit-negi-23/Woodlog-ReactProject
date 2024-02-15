@@ -48,7 +48,7 @@ export default function CategorieSection() {
                     {(bestSell != null) ? bestSell.map((item) => {
                         
                         return (
-                            <Link to={'/'+item.pathname}>
+                            <Link key={item.pathname} to={'/'+item.pathname}>
                                 <div className="furniture-best-seller-cards">
                                     <img src={item.image}
                                         className="furniture-img" alt='fur' />

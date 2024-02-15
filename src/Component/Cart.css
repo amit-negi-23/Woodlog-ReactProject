@@ -60,3 +60,7 @@ tbody tr td.selling-price{
     border: 1px solid #ff7035;
     color: #ff7035;
 }
+
+.cart-furniture-card{
+    display: flex;
+}

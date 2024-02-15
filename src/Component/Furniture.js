@@ -27,15 +27,15 @@ export default function Furniture() {
   },[category])
   return (
     <>
-    <section class="furniture-offer-section">
-            <div class="furniture-offer-card-container">
-                {(brands!=null)?<div class="furniture-brands-offer">
+    <section className="furniture-offer-section">
+            <div className="furniture-offer-card-container">
+                {(brands!=null)?<div className="furniture-brands-offer">
                         <img src={brands.allBrand} alt='offer'/>
                 </div>:'loading'}
                 {(categoryOffer!=null)?categoryOffer.map((item)=>{
                   
                   return(
-                    <Link to={'/'+category+ '/'+item.productId}>
+                    <Link key={item.productId} to={'/'+category+ '/'+item.productId}>
                     <div className="furniture-offer-cards">
                         <img src={item.image} className="furniture-img" alt='off'/>
                         <div className="furniture-offer-card-body">
