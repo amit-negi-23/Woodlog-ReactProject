@@ -58,7 +58,6 @@ export default function Cart() {
                 {isMobile && products.map((product, idx) => {
                     return (
                         <>
-                            <div>This page is under construction........</div>
                             <div className='cart-furniture-card'>
                                 <div className="cart-furniture-left">
                                     <div className="cart-furniture-img">
