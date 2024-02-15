@@ -58,10 +58,12 @@ export default function Cart() {
                 {isMobile && products.map((product, idx) => {
                     return (
                         <>
-                        <div>This page is under construction........</div>
+                            <div>This page is under construction........</div>
                             <div className='cart-furniture-card'>
-                                <div>
-                                    <img src={product.image} className="furniture-img" alt='sofa' />
+                                <div className="cart-furniture-left">
+                                    <div className="cart-furniture-img">
+                                        <img src={product.image} alt='sofa' />
+                                    </div>
                                     <button onClick={() => { removeProduct(product) }}>Remove</button>
                                 </div>
                                 <div className="cart-furniture-card-body">

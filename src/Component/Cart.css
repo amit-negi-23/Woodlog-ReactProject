@@ -64,3 +64,9 @@ tbody tr td.selling-price{
 .cart-furniture-card{
     display: flex;
 }
+.cart-furniture-img{
+    width: 110px;
+}
+.cart-furniture-img img{
+    width: 100%;
+}
