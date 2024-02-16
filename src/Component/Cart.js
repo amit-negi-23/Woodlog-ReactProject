@@ -6,13 +6,10 @@ import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 export default function Cart() {
     const { store: { products }, dispatch } = useContext(CartContext)
-    const isDesktopOrLaotop = useMediaQuery({ query: '(min-width: 992px)' })
-    const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
-    /*const [mobDevice, setmobDevice] = useState()
-     if(window.innerWidth<600){
-         setmobDevice(window.innerWidth)
-     }
-     console.log(mobDevice)*/
+    const isMobile = useMediaQuery({ query: '(max-width: 575px)' })
+    const isTablet = useMediaQuery({query: '(min-width: 576px) and (max-width: 991px)'})
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width:992px)' })
+
     const removeProduct = (product) => {
 
         dispatch({ type: String.REMOVE_PRODUCT, payload: { id: product.productId } })
@@ -20,7 +17,7 @@ export default function Cart() {
     return (
         <div>
             {(products.length !== 0) ? <div className='table-container'>
-                {isDesktopOrLaotop && <table>
+                {isDesktopOrLaptop && <table>
                     <thead>
                         <tr>
                             <th>SR.No.</th>
@@ -55,7 +52,7 @@ export default function Cart() {
                     </tbody>
                 </table>}
 
-                {isMobile && products.map((product, idx) => {
+                {(isMobile || isTablet) && products.map((product, idx) => {
                     return (
                         <>
                             <div className='cart-furniture-card'>

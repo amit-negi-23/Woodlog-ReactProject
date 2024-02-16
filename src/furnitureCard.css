@@ -120,10 +120,22 @@ span.percent-off,
     opacity: 0.7;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575px) {
+    /*phone*/
+    .furniture-brands-offer {
+        width: 150px;
+    }
+    .furniture-brands-offer img {
+        width: inherit;
+    }
+
+    .furniture-offer-cards {
+        width: 150px;
+    }
     .furniture-offer-card-container {
         overflow-x: auto;
         flex-wrap: nowrap;
+        justify-content: flex-start;
     }
 
     .furniture-offer-card-title {
@@ -134,21 +146,15 @@ span.percent-off,
         font-size: 12px;
     }
 
-    .furniture-offer-cards {
-        width: 150px;
-    }
-
-    .furniture-brands-offer {
-        margin-left: 240px;
-    }
-
     #furniture-card-section {
         margin: 0;
     }
 
     .furniture-cards-container {
         box-sizing: border-box;
-        gap: 2px 7px;
+        gap:0px;
+        justify-content: space-around;
+        
     }
 
     .furniture-card {
@@ -176,3 +182,31 @@ span.percent-off,
         margin-bottom: 2px;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /*tablets*/
+    .furniture-brands-offer {
+        width: 200px;
+    }
+    .furniture-brands-offer img {
+        width: inherit;
+    }
+    .furniture-offer-cards{
+        width: 170px;
+    }
+    .furniture-offer-card-container {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content:flex-start;
+    }
+    #furniture-card-section {
+        margin:0px;
+    }
+    .furniture-cards-container{
+        gap: 0px;
+        justify-content: space-around;
+        margin: 10px auto;
+    }
+    .furniture-card{
+        width: 370px;
+    }
+  }

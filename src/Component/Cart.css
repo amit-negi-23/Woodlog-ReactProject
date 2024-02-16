@@ -83,7 +83,9 @@ tbody tr td.selling-price {
     width: 40%;
     text-align: center;
 }
-
+/* .cart-furniture-img{
+    width: 100%;
+} */
 .cart-furniture-img img {
     width: 100%;
 }
@@ -93,4 +95,28 @@ tbody tr td.selling-price {
     background-color: #f20404;
     border: 0;
     color: #fff;
+}
+
+@media only screen and (max-width: 575px){
+    .cart-furniture-left{
+        width: 40%;
+    }
+    .cart-furniture-card-body{
+        width: 60%;
+    }
+    .cart-furniture-card{
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cart-furniture-left{
+        width: 30%;
+    }
+    .cart-furniture-card-body{
+        width: 70%;
+    }
+    .cart-furniture-card{
+        margin-bottom: 15px;
+    }
 }

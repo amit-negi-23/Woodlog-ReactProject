@@ -165,7 +165,9 @@ body {
 
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){
+/*phones*/
+
   #search{
     padding:0 8px;
     display: none;
@@ -228,4 +230,11 @@ body {
     padding: 5px;
   }
 
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  /*landscape phones*/
+  #search input {
+    width: 10em;
+  }
 }
