@@ -40,11 +40,11 @@ export default function Header() {
                 <div id="header-bottom-container">
                     <nav id="navbar">
                         <ul id="navmenu">
-                            <li className="navitem"><Link to={'Beds'} className="navlink">Bedroom Furniture</Link></li>
-                            <li className="navitem"><Link to={'DiningSets'} className="navlink">Dining & Kitchen Furniture</Link></li>
-                            <li className="navitem"><Link to={'/BarFurniture'} className="navlink">Bar furniture</Link></li>
-                            <li className="navitem"><Link to={'OfficeFurniture'} className="navlink">Study & office Furniture</Link></li>
-                            <li className="navitem"><Link to={'Wardrobes'} className="navlink">Book Shelves</Link></li>
+                            <li className="navitem"><Link to={'beds'} className="navlink">Bedroom Furniture</Link></li>
+                            <li className="navitem"><Link to={'diningSets'} className="navlink">Dining & Kitchen Furniture</Link></li>
+                            <li className="navitem"><Link to={'/barFurniture'} className="navlink">Bar furniture</Link></li>
+                            <li className="navitem"><Link to={'officeFurniture'} className="navlink">Study & office Furniture</Link></li>
+                            <li className="navitem"><Link to={'wardrobes'} className="navlink">Book Shelves</Link></li>
                         </ul>
                     </nav>
 

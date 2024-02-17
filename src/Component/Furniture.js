@@ -10,7 +10,6 @@ export default function Furniture() {
   const [categoryOffer, setcategoryOffer] = useState()
   const [brands, setBrand] = useState()
 
-
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/amit-negi-23/Server/main/furniture.json")
       .then(res => res.json())
@@ -21,23 +20,6 @@ export default function Furniture() {
       })
   }, [category])
 
-
-  // useEffect(() => {
-  //   fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + ".json")
-  //     .then(res => res.json())
-  //     .then(data => { setcategoryData(data) })
-  // }, [category])
-
-  // useEffect(()=>{
-  //     fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + "Offer.json")
-  //     .then(res => res.json())
-  //     .then(data => {setcategoryOffer(data)})
-  // },[category])
-  // useEffect(()=>{
-  //   fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + "TopBrand.json")
-  //   .then(res=>res.json())
-  //   .then(data=>{setBrand(data)})
-  // },[category])
   return (
     <>
       <section className="furniture-offer-section">

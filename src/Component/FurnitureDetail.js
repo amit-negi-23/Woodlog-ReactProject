@@ -22,15 +22,7 @@ export default function FurnitureDetail() {
             })
     }, [category,product,offerproduct])
 
-
-    // useEffect(() => {
-    //     fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/Allproduct/" + product + ".json")
-    //         .then(res => res.json())
-    //         .then(data => { setProductData(data);})
-    // }, [product])
-
     const addProduct= ()=>{
-    
         dispatch({type:String.ADD_PRODUCT, payload: {newProduct: productData}})
     }
 

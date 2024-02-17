@@ -12,14 +12,6 @@ export default function CategorieSection() {
             .then(data => { setShop(data.shop); setCare(data.takecare); setBestSell(data.bestSeller) })
     }, [])
 
-
-
-    // useEffect(() => {
-    //     fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/furniture.json")
-    //         .then(res => res.json())
-    //         .then(data => { setShop(data.shop); setCare(data.takecare); setBestSell(data.bestSeller) })
-    // }, [])
-
     return (
         <div>
             <div id="hero-sec">
@@ -55,9 +47,9 @@ export default function CategorieSection() {
                 <h2>Shop Best Sellers</h2>
                 <div className="furniture-best-seller-container">
                     {(bestSell != null) ? bestSell.map((item) => {
-                        
+
                         return (
-                            <Link key={item.pathname} to={'/'+item.pathname}>
+                            <Link key={item.pathname} to={'/' + item.pathname}>
                                 <div className="furniture-best-seller-cards">
                                     <img src={item.image}
                                         className="furniture-img" alt='fur' />
@@ -74,8 +66,8 @@ export default function CategorieSection() {
 
             <section className='sale-discount-section'>
                 <div className='sale-discount-container'>
-                    <div><img src='https://ii1.pepperfry.com/assets/3c7308b7-afe8-4992-b29a-24c43ae9c780.jpg'  alt='discount' /></div>
-                    <div><img src='https://ii1.pepperfry.com/assets/8432fff0-e21d-4556-9134-6f899807ec92.jpg'  alt='discount' /></div>
+                    <div><img src='https://ii1.pepperfry.com/assets/3c7308b7-afe8-4992-b29a-24c43ae9c780.jpg' alt='discount' /></div>
+                    <div><img src='https://ii1.pepperfry.com/assets/8432fff0-e21d-4556-9134-6f899807ec92.jpg' alt='discount' /></div>
                 </div>
             </section>
         </div>
