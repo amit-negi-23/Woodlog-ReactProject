@@ -11,29 +11,33 @@ export default function Furniture() {
   const [brands, setBrand] = useState()
 
 
-  // useEffect(() => {
-  //   fetch("https://raw.githubusercontent.com/amit-negi-23/Server/main/furniture.json")
-  //     .then(res => res.json())
-  //     .then(data => { setcategoryData(data[category]); setcategoryOffer(data.furnitureOffer[category]); setBrand(data.furnitureTopBrands[category]) })
-  // }, [category])
-
-  
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + ".json")
+    fetch("https://raw.githubusercontent.com/amit-negi-23/Server/main/furniture.json")
       .then(res => res.json())
-      .then(data => { setcategoryData(data) })
+      .then(data => {
+        setcategoryData(data[category]);
+        setcategoryOffer(data.furnitureOffer[category]);
+        setBrand(data.furnitureTopBrands[category])
+      })
   }, [category])
 
-  useEffect(()=>{
-      fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + "Offer.json")
-      .then(res => res.json())
-      .then(data => {setcategoryOffer(data)})
-  },[category])
-  useEffect(()=>{
-    fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + "TopBrand.json")
-    .then(res=>res.json())
-    .then(data=>{setBrand(data)})
-  },[category])
+
+  // useEffect(() => {
+  //   fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + ".json")
+  //     .then(res => res.json())
+  //     .then(data => { setcategoryData(data) })
+  // }, [category])
+
+  // useEffect(()=>{
+  //     fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + "Offer.json")
+  //     .then(res => res.json())
+  //     .then(data => {setcategoryOffer(data)})
+  // },[category])
+  // useEffect(()=>{
+  //   fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/" + category + "TopBrand.json")
+  //   .then(res=>res.json())
+  //   .then(data=>{setBrand(data)})
+  // },[category])
   return (
     <>
       <section className="furniture-offer-section">
@@ -44,7 +48,7 @@ export default function Furniture() {
           {(categoryOffer != null) ? categoryOffer.map((item) => {
 
             return (
-              <Link key={item.productId} to={'/' + category + '/' + item.productId}>
+              <Link key={item.productId} to={'/' + category + '/offer/' + item.productId}>
                 <div className="furniture-offer-cards">
                   <img src={item.image} className="furniture-img" alt='off' />
                   <div className="furniture-offer-card-body">

@@ -6,22 +6,28 @@ import { CartContext } from '../App'
 import { String } from '../Store/String'
 
 export default function FurnitureDetail() {
-    const { product } = useParams()
+    const { product,category , offerproduct} = useParams()
     const [productData, setProductData] = useState()
     const {dispatch} = useContext(CartContext)
+    useEffect(() => {
+        fetch("https://raw.githubusercontent.com/amit-negi-23/Server/main/furniture.json")
+            .then(res => res.json())
+            .then(data => {
+                if(product){
+                    setProductData((data[category].filter((item) =>item.productId ===product))[0])
+                }else if (offerproduct){
+                    setProductData((data.furnitureOffer[category].filter((item) =>item.productId ===offerproduct))[0])
+
+                }
+            })
+    }, [category,product,offerproduct])
+
 
     // useEffect(() => {
-    //     fetch("https://raw.githubusercontent.com/amit-negi-23/Server/main/furniture.json")
+    //     fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/Allproduct/" + product + ".json")
     //         .then(res => res.json())
-    //         .then(data => { setProductData(data[category]);})
+    //         .then(data => { setProductData(data);})
     // }, [product])
-
-
-    useEffect(() => {
-        fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/Allproduct/" + product + ".json")
-            .then(res => res.json())
-            .then(data => { setProductData(data);})
-    }, [product])
 
     const addProduct= ()=>{
     
@@ -29,7 +35,7 @@ export default function FurnitureDetail() {
     }
 
     const buyProduct = ()=>{
-        console.log(productData)
+        alert("Currently you can't buy");
     }
 
     return (
