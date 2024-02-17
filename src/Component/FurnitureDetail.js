@@ -6,9 +6,16 @@ import { CartContext } from '../App'
 import { String } from '../Store/String'
 
 export default function FurnitureDetail() {
-    const [productData, setProductData] = useState()
     const { product } = useParams()
+    const [productData, setProductData] = useState()
     const {dispatch} = useContext(CartContext)
+
+    // useEffect(() => {
+    //     fetch("https://raw.githubusercontent.com/amit-negi-23/Server/main/furniture.json")
+    //         .then(res => res.json())
+    //         .then(data => { setProductData(data[category]);})
+    // }, [product])
+
 
     useEffect(() => {
         fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/Allproduct/" + product + ".json")

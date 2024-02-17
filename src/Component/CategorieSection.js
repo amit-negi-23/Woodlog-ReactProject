@@ -5,6 +5,15 @@ export default function CategorieSection() {
     const [shop, setShop] = useState()
     const [care, setCare] = useState()
     const [bestSell, setBestSell] = useState()
+
+    // useEffect(() => {
+    //     fetch("https://raw.githubusercontent.com/amit-negi-23/Server/main/furniture.json")
+    //         .then(res => res.json())
+    //         .then(data => { setShop(data.shop); setCare(data.takecare); setBestSell(data.bestSeller) })
+    // }, [])
+
+
+
     useEffect(() => {
         fetch("https://raw.githubusercontent.com/amit-negi-23/Fake-Server/main/furniture.json")
             .then(res => res.json())
