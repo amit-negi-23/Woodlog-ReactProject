@@ -18,6 +18,7 @@ export default function Cart() {
         <div>
             {(products.length !== 0) ? <div className='table-container'>
                 {isDesktopOrLaptop && <table>
+                    <caption>Total Price : 10000</caption>
                     <thead>
                         <tr>
                             <th>SR.No.</th>
@@ -27,8 +28,10 @@ export default function Cart() {
                             <th>Shipping</th>
                             <th>MRP</th>
                             <th>Discount</th>
-                            <th>Discount Percent</th>
+                            <th>Discount(%)</th>
                             <th>Sell Price</th>
+                            <th>Quantity</th>
+                            <th>Total price</th>
                             <th>Remove item</th>
                         </tr>
                     </thead>
@@ -45,6 +48,8 @@ export default function Cart() {
                                     <td>₹{product.discount.price}</td>
                                     <td>{product.discount.percent}</td>
                                     <td className='selling-price'>₹{product.price.sell}</td>
+                                    <td>{product.quantity}</td>
+                                    <td>{(product.quantity*Number(product.price.sell.replace(",",""))).toLocaleString()}</td>
                                     <td><button onClick={() => { removeProduct(product) }}>Remove</button></td>
                                 </tr>
                             )
