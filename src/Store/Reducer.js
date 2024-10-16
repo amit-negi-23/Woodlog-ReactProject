@@ -5,6 +5,7 @@ export const reducer = (state, action) => {
             if(existingProduct){
                 existingProduct.quantity+=1;
             }else{
+                action.payload.newProduct.quantity=1;
                 return { ...state, products: [...state.products, action.payload.newProduct] };
             }  
         }

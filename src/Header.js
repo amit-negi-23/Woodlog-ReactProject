@@ -32,7 +32,9 @@ export default function Header() {
                         <i className="fa-regular fa-user"></i>
                     </div>
                     <div>
+                    <Link to={'/register'} id="signup-btn"> 
                         <button id="signup-btn">Sign Up</button>
+                    </Link>
                         <button id="login-btn">Log In</button>
                     </div>
                 </div>

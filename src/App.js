@@ -10,6 +10,7 @@ import Loading from './Component/Loading';
 import Cart from './Component/Cart';
 import {reducer} from './Store/Reducer'
 import { createContext, useReducer,useEffect,useState } from 'react'
+import RegistrationForm from './Component/RegstrationForm';
 
 export const CartContext = createContext()
 const initialState = {
@@ -38,6 +39,7 @@ function App() {
 
         <Route path={'/'} element={<CategorieSection />} />
         <Route path={'/cart'} element={<Cart/>} />
+        <Route path={'/register'} element={<RegistrationForm/>} />
         <Route path={'/:category'} element={<Furniture/>}/>
         <Route path={'/:category/:product'} element={<FurnitureDetail/>}/>
         <Route path={'/:category/offer/:offerproduct'} element={<FurnitureDetail/>}/>

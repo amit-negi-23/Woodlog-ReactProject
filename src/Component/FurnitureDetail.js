@@ -22,8 +22,9 @@ export default function FurnitureDetail() {
             })
     }, [category,product,offerproduct])
 
+    console.log("a",productData)
     const addProduct= ()=>{
-        dispatch({type:String.ADD_PRODUCT, payload: {newProduct: {...productData,quantity:1}}})
+        dispatch({type:String.ADD_PRODUCT, payload: {newProduct: productData}})
     }
 
     const buyProduct = ()=>{
